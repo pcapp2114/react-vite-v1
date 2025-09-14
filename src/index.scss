@@ -1,0 +1,415 @@
+@import '_colors';
+
+:root {
+  // color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --black: #000000;
+  --white: #FFFFFF;
+  --light-beige: #fbfbf3;
+  --beige: #eceac1;
+  --dark-beige: #e8e5a5;
+  --light-blue: #94c7f0;
+  --blue: #247db8;
+  --dark-blue: #2d65a9;
+  --darkest-blue: #0b2437;
+  --lightest-grey: #f8f5f5;
+  --light-grey: #e5e5e5;
+  --medium-grey: #c4c4c4;
+  --dark-grey: #6e6d6d;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  background-color: white;
+  margin: 0;
+  //display: flex;
+  //place-items: center;
+  overflow-x: hidden;
+  //min-width: 1500px;
+  //min-height: 100vh;
+}
+
+a {
+
+  // text-decoration: inherit;
+}
+
+a:hover {}
+
+// force pre tag to wrap, good for mobile display
+pre {
+  white-space: pre-wrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Merriweather, serif;
+  word-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.5;
+  margin-bottom: .5rem;
+}
+
+
+p,
+ul,
+ol,
+{
+font-family: Helvetica, Arial, sans-serif;
+}
+
+.content-title {
+  margin-top: 0;
+  margin-bottom: 15px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.17rem;
+  font-weight: 700;
+}
+
+h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+h5 {
+  font-size: .9rem;
+  font-weight: 700;
+}
+
+h6 {
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+
+ol,
+ul {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  //padding-left: 1.94em;
+}
+
+li {
+  //line-height: 1.5;
+  margin-bottom: .5em;
+}
+
+// Padding below all page content
+.PageContent {
+  padding-bottom: 2rem;
+
+}
+
+// Main grid contaner to set width of site
+.grid-container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+
+button {
+  border: none;
+  // border-radius: 8px;
+  // border: 1px solid transparent;
+  // padding: 0.6em 1.2em;
+  // font-size: 1em;
+  // background-color: #1a1a1a;
+  // cursor: pointer;
+  // transition: border-color 0.25s;
+}
+
+button:hover {}
+
+button:focus,
+button:focus-visible {
+  border: none;
+  outline: none;
+  //outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:active,
+button:visited {}
+
+// Government site region
+
+.GovernmentSite-region {
+  background-color: var(--lightest-grey);
+
+  .usa-banner-title {
+    font-size: .9rem;
+    float: left;
+  }
+}
+
+.GovernmentSite-region .accordion {}
+
+
+
+h2.accordion-header {
+  line-height: 1.2rem;
+  font-size: unset;
+  font-weight: unset;
+  padding: 0;
+  margin: 0;
+  //transform: translate(355px, -22px);
+  // position: absolute;
+  // left: 350px;
+  // top: 0px;
+}
+
+
+.accordion-header .how-you-know {
+  position: static;
+  display: inline;
+  float: left;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.accordion-header .arrow {
+  font-size: .6rem;
+
+}
+
+.accordion-header .accordion-button {
+  font-size: .9rem;
+}
+
+
+.accordion-button {
+  outline: none;
+  background-color: unset;
+}
+
+.GovernmentSite-region .flag-img {
+  height: 15px;
+  width: 20px;
+  margin: .2rem;
+  float: left;
+
+}
+
+
+.banner-government-site {}
+
+
+
+// Logo Header region
+.LogoheaderRegion {
+  background-color: rgb(212, 235, 235);
+  height: 5rem;
+}
+
+.LogoheaderRegion img {
+  height: 70px;
+  width: 80px;
+}
+
+.logoheader {
+  display: flex;
+}
+
+.search-secondary-form {
+  margin-left: auto;
+  padding-top: .5rem;
+
+}
+
+ul.SecondaryMenulinks {
+  font-size: .8rem;
+  display: block;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+ul.SecondaryMenulinks li {
+  padding-right: 1rem;
+  padding-top: .4rem;
+  display: inline-block;
+}
+
+a.secondary-menu-link {
+  padding: 0;
+  margin: 0;
+  color: var(--blue) !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .5s;
+}
+
+a.secondary-menu-link:hover {
+  border-bottom: 1px solid #94c7f0;
+  transition: border-bottom .5s;
+}
+
+
+
+
+
+// Menu header
+
+ul.Menulinks {
+  font-size: 1.2rem;
+  //font-weight: 500;
+  display: block;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+ul.Menulinks li {
+  padding-right: 1rem;
+  display: inline-block;
+}
+
+a.menu-link {
+  padding: 0;
+  margin: 0;
+  color: var(--blue) !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .5s;
+}
+
+a.menu-link:hover {
+  border-bottom: 1px solid #94c7f0;
+  transition: border-bottom .5s;
+}
+
+
+// Footer
+.FooterRegion {
+  background-color: var(--darkest-blue);
+  padding-bottom: 2rem;
+}
+
+.footer-branding {
+  font-size: 2rem;
+  color: white;
+  //position: absolute;
+  padding: 1rem 0 1rem 0;
+}
+
+.footer-branding span {
+  padding-left: 2rem;
+  display: inline-block;
+}
+
+.FooterBrand {
+  background-color: var(--blue);
+}
+
+.FooterRegion p {
+  color: #f2f3f4;
+  font-weight: 400;
+  font-size: 1.8rem;
+}
+
+ul.Footerlinks {
+  font-size: .9rem;
+  display: block;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+}
+
+ul.Footerlinks li {}
+
+a.footer-link {
+  padding: 0;
+  margin: 0;
+  color: var(--light-blue) !important;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .5s;
+}
+
+a.footer-link:hover {
+  border-bottom: 1px solid #94c7f0;
+  transition: border-bottom .5s;
+}
+
+// Bootstrap 3 card with images
+.card-img-top {
+  width: 100%;
+  height: 190px;
+}
+
+.card-img-top img {
+  width: 100%;
+  height: 190px;
+}
+
+//Homepage slider
+.slick-slider {
+  //padding: 0 1rem 0 0;
+  margin-bottom: 2rem !important;
+
+}
+
+.slider-container {
+  width: 100%;
+  height: 15rem;
+  object-fit: contain;
+
+}
+
+.slider-container img {
+  width: 100%;
+  height: 15rem;
+  //object-fit: contain;
+}
+
+.slick-prev {
+  left: 1% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 1% !important;
+  z-index: 1;
+}
