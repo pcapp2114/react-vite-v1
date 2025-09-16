@@ -21,6 +21,9 @@ node_modules
 
 # Editor directories and files
 .env
+.env*
+.env.production
+.env.local
 .vscode/*
 !.vscode/extensions.json
 .idea
