@@ -2,8 +2,8 @@
   "name": "menulinks",
   "private": true,
   "version": "0.0.0",
-    "homepage": "/assets/react-sites/usda",
-  "description": "DOE Department of Energy - v1",
+    "homepage": "/assets/react-sites/react-doe-v1",
+  "description": "DOE Department of Energy - v1 - React + Vite with BrowserRouter, Bootstrap theme and API's",
   "type": "module",
   "scripts": {
     "dev": "vite",

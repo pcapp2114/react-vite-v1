@@ -5,6 +5,8 @@ import './styles/main.scss';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
 import Contactus from './pages/Contactus';
+import Mission from './pages/Mission';
+import NewHorizons from './pages/NewHorizons';
 import GovernmentSite from './regions/GovernmentSite';
 import Logoheader from './regions/Logoheader';
 import Menuheader from './regions/Menuheader';
@@ -33,8 +35,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Navigate to="/home" replace />} />
         <Route path="/home" element={<Home />} />
-        <Route path="/contactus" element={<Contactus />} />
         <Route path="/aboutus" element={<Aboutus />} />
+        <Route path="/contactus" element={<Contactus />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/new-horizons" element={<NewHorizons />} />
 
       </Routes>
       <Footer />

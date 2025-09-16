@@ -1,9 +1,8 @@
-
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 
 
 const Contactus = () => {
@@ -11,18 +10,26 @@ const Contactus = () => {
     <Container fluid className="PageContent">
       <div className="grid-container">
 
-        <div>
+
           <h1 className='content-title'>Contact us</h1>
 
-
-          <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
-<FontAwesomeIcon icon="fa-solid fa-dog" />
-
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique, facere error dignissimos ea impedit doloremque esse, minima suscipit odio magni porro totam sit ad at deserunt soluta vel nihil non. Quasi repellendus quam qui possimus molestias aspernatur ipsam ad voluptatem, quod cumque fugit porquam.
+            You can send an email to the Secretary of Energy at The.Secretary@hq.doe.gov
+          </p>
+            <p>
+            202-586-5000 (Main Switchboard)
+If you are deaf, hard of hearing or have a speech disability, use 7-1-1 to access Text Telephone (TTY) Telecommunications Access Services 
           </p>
 
-        </div>
+           <p>
+           U.S. Department of Energy
+1000 Independence Ave., SW
+Washington, DC 20585
+
+*Please note: mail may take up to 3 weeks to arrive.  As such, we strongly encourage you to use the email address provided above or the form provided below.
+          </p>
+
+
 
       </div>
     </Container>

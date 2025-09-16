@@ -12,9 +12,10 @@ const Menuheader = () => {
 
         <nav>
           <ul className='Menulinks'>
-            <li><NavLink to="/home" className='menu-link'>Home</NavLink></li>
+            {/* <li><NavLink to="/home" className='menu-link'>Home</NavLink></li> */}
             <li><NavLink to="/aboutus" className='menu-link'>About</NavLink></li>
-           <li><NavLink to="/contactus" className='menu-link'>Contact</NavLink></li>
+            <li><NavLink to="/mission" className='menu-link'>Our Mission</NavLink></li>
+            <li><NavLink to="/new-horizons" className='menu-link'>New Horizons</NavLink></li>
           </ul>
 
         </nav>

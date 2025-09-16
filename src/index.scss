@@ -1,5 +1,3 @@
-@import '_colors';
-
 :root {
   // color-scheme: light dark;
 
@@ -234,19 +232,22 @@ h2.accordion-header {
 }
 
 
-.banner-government-site {}
+.banner-government-site {
+  
+}
 
 
 
 // Logo Header region
 .LogoheaderRegion {
-  background-color: rgb(212, 235, 235);
+  background: #2b86e0;
+  background: linear-gradient(0deg, rgba(43, 134, 224, 1) 0%, rgba(48, 83, 186, 1) 37%, rgba(4, 26, 64, 1) 100%);
   height: 5rem;
 }
 
 .LogoheaderRegion img {
-  height: 70px;
-  width: 80px;
+  height: auto;
+  width: 220px;
 }
 
 .logoheader {
@@ -260,7 +261,7 @@ h2.accordion-header {
 }
 
 ul.SecondaryMenulinks {
-  font-size: .8rem;
+  font-size: 1rem;
   display: block;
   overflow: auto;
   padding: 0;
@@ -276,7 +277,7 @@ ul.SecondaryMenulinks li {
 a.secondary-menu-link {
   padding: 0;
   margin: 0;
-  color: var(--blue) !important;
+  color: white;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom .5s;
@@ -288,7 +289,12 @@ a.secondary-menu-link:hover {
 }
 
 
+// Menu header region
+.MenuheaderRegion {
+  background: #e1ebf5;
 
+
+}
 
 
 // Menu header
@@ -303,7 +309,7 @@ ul.Menulinks {
 }
 
 ul.Menulinks li {
-  padding-right: 1rem;
+  padding-right: 1.5rem;
   display: inline-block;
 }
 
@@ -326,6 +332,11 @@ a.menu-link:hover {
 .FooterRegion {
   background-color: var(--darkest-blue);
   padding-bottom: 2rem;
+}
+
+.footer-branding img{
+  height: auto;
+  width: 150px;
 }
 
 .footer-branding {
@@ -409,6 +420,7 @@ a.footer-link:hover {
   left: 1% !important;
   z-index: 1;
 }
+
 .slick-next {
   right: 1% !important;
   z-index: 1;

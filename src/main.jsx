@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
 import Contactus from './pages/Contactus';
+import Mission from './pages/Mission';
+import NewHorizons from './pages/NewHorizons';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
@@ -27,10 +29,18 @@ const router = createBrowserRouter([
         path: 'contactus',
         element: <Contactus />,
       },
+      {
+        path: 'new-horizons',
+        element: <NewHorizons />,
+      },
+      {
+        path: 'mission',
+        element: <Mission />,
+      },
     ],
   },
 ], {
-  basename: '/assets/react-sites/usda/', // Example: '/my-app/' or '/admin/'
+  basename: '/assets/react-sites/react-doe-v1/', // Example: '/my-app/' or '/admin/'
 });
 
 ReactDOM.createRoot(document.getElementById('root')).render(

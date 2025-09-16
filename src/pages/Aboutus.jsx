@@ -16,8 +16,10 @@ const Aboutus = () => {
             <div>
               <h1 className='content-title'>About us</h1>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus similique, facere error dignissimos ea impedit doloremque esse, minima suscipit odio magni porro totam sit ad at deserunt soluta vel noluta quisquam.
+                A successful transmission network requires deliberate planning, and a new and different approach. One that identifies long-term, flexible, and interregional solutions that will meet national interests. Modernizing transmission planning can provide greater certainty to drive investment to the highest-need transmission projects and enable development of the projects with the largest long-term benefit for consumers.
               </p>
+              <p>On October 3, 2024, the U.S. Department of Energy (DOE) released the final National Transmission Planning (NTP) Study, a set of long-term planning tools and analyses that examine a wide range of potential future scenarios through 2050 to identify pathways to maintain grid reliability, increase resilience, and reduce costs, while meeting local, regional, interregional, and national interests and supporting the changing energy landscape. The NTP Study was developed in partnership with the National Renewable Energy Laboratory (NREL) and the Pacific Northwest National Laboratory (PNNL).</p>
+              <p>Released on October 30, 2023, the National Transmission Needs Study serves as DOE's triennial state of the grid report and is a robust assessment of current and near-term future transmission needs through 2040. The Needs Study is not intended to displace existing transmission planning processes and is not intended to identify specific transmission solutions to address identified needs, but it does identify key national needs that can inform investments and planning decisions. Where previous National Transmission Congestion Studies were limited to consider only historic congestion, this study considers both historic and anticipated future transmission needs driven by the rapidly increasing electric load, distributed generation and grid-edge devices.</p>
 
 
 

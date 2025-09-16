@@ -3,7 +3,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Link, NavLink } from 'react-router-dom';
 import './../index.scss'
-import logo from './../assets/images/usda-logo-white.svg';
+import footerlogo from './../assets/images/logo-doe-dark-v2.svg';
 
 const Footer = () => {
   return (
@@ -15,8 +15,8 @@ const Footer = () => {
         <Col className="FooterBrand">
           <div className="grid-container">
             <div className="footer-branding">
-              <img src={logo} alt="Logo" />
-              <span>U.S. Department of Agriculture</span>
+              <img src={footerlogo} alt="Logo" />
+              <span>U.S. Department of Energy</span>
             </div>
           </div>
 
