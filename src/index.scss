@@ -247,7 +247,7 @@ h2.accordion-header {
 
 .LogoheaderRegion img {
   height: auto;
-  width: 220px;
+  width: 200px;
 }
 
 .logoheader {
@@ -340,7 +340,7 @@ a.menu-link:hover {
 }
 
 .footer-branding {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   //position: absolute;
   padding: 1rem 0 1rem 0;
@@ -358,7 +358,11 @@ a.menu-link:hover {
 .FooterRegion p {
   color: #f2f3f4;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+}
+
+.footer-links{
+padding: 1rem 0 0 0;
 }
 
 ul.Footerlinks {
@@ -396,7 +400,46 @@ a.footer-link:hover {
   height: 190px;
 }
 
-//Homepage slider
+/* Slick homepage slider */
+
+.slick-slide img {
+    object-fit: cover;
+    height: 400px !important;
+  width: 100% !important;
+}
+
+.slick-slide .slide-title {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #ecf1f5;
+  background-color: rgba(170, 211, 250, 0.5);
+}
+.slick-slide .slide-description {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #104e81;
+  background-color: rgba(232, 239, 245, 0.8);
+}
+.slick-slide .slide-learn {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  margin-left: 1rem;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: #e3ebf1;
+  background-color: rgba(8, 42, 71, 0.9);
+}
+
+
+
 .slick-slider {
   //padding: 0 1rem 0 0;
   margin-bottom: 2rem !important;
@@ -425,3 +468,4 @@ a.footer-link:hover {
   right: 1% !important;
   z-index: 1;
 }
+

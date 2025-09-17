@@ -37,7 +37,6 @@ const Logoheader = () => {
                 <ul className='SecondaryMenulinks'>
                   <li><NavLink to="/" className='secondary-menu-link'>Dashboard</NavLink></li>
                   <li><NavLink to="/contactus" className='secondary-menu-link'>Contact</NavLink></li>
-                  <li><NavLink to="/aboutus" className='secondary-menu-link'>Site Map</NavLink></li>
                   <li><NavLink to="/contactus" className='secondary-menu-link'>Login</NavLink></li>
                 </ul>
 

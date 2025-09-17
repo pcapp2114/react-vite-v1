@@ -2,7 +2,7 @@
   "name": "menulinks",
   "private": true,
   "version": "0.0.0",
-    "homepage": "/assets/react-sites/react-doe-v1",
+  "homepage": "/assets/react-sites/react-doe-v1",
   "description": "DOE Department of Energy - v1 - React + Vite with BrowserRouter, Bootstrap theme and API's",
   "type": "module",
   "scripts": {
@@ -17,6 +17,8 @@
     "@fortawesome/free-regular-svg-icons": "^7.0.0",
     "@fortawesome/free-solid-svg-icons": "^7.0.0",
     "@fortawesome/react-fontawesome": "^3.0.0",
+    "@pollinations/react": "^2.0.7",
+    "axios": "^1.12.2",
     "bootstrap": "^5.3.7",
     "holderjs": "^2.9.9",
     "react": "^19.1.1",

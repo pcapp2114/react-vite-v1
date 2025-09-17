@@ -24,7 +24,7 @@ const Footer = () => {
       </Row>
 
       <div className="grid-container">
-
+<div className="footer-links">
         <Row>
           <Col sm={4}>
             <p>Policy and Statements</p>
@@ -58,7 +58,7 @@ const Footer = () => {
 
 
         </Row>
-
+</div> 
       </div> {/* end grid container */}
     </Container>
 
