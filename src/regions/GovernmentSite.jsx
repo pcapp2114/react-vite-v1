@@ -60,7 +60,7 @@ const GovernmentSite = () => {
 
                     </Col>
                     <Col sm={4}>
-                    <div className="usa-banner-title">
+                    <div className="usa-banner-title d-none d-md-block">
                             U.S. Department of Agriculture
                         </div>
                     </Col>

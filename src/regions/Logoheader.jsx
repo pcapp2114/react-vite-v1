@@ -22,9 +22,13 @@ const Logoheader = () => {
             <img src={logo} className="logo-img" alt="U.S. Department of Energy" />
           </NavLink>
           </div>
-          <div className="search-secondary-form">
-            <div className="search">
 
+
+          {/* This div is hidden on mobile (xs and sm), visible on md and larger */}
+          <div className="search-secondary-form d-none d-md-block">
+
+            <div className="search">
+              
               <input
                 type="text"
                 placeholder="Search"
@@ -32,6 +36,8 @@ const Logoheader = () => {
 
 
             </div>
+
+             
             <div className="secondary-menu">
               <nav>
                 <ul className='SecondaryMenulinks'>

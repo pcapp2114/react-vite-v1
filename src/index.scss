@@ -254,6 +254,15 @@ h2.accordion-header {
   display: flex;
 }
 
+// Mobile view  Logo Header region
+@media (max-width: 768px) {
+  .logoheader {
+    justify-content: center;
+  }
+
+
+}
+
 .search-secondary-form {
   margin-left: auto;
   padding-top: .5rem;
@@ -291,40 +300,100 @@ a.secondary-menu-link:hover {
 
 // Menu header region
 .MenuheaderRegion {
-  background: #e1ebf5;
-
-
+  // background: #e1ebf5;
 }
 
 
 // Menu header
 
-ul.Menulinks {
+.custom-navbar {
+  // display: flex;
+  justify-content: space-between;
+  align-items: left;
+background: #e1ebf5;
+  padding: 0;
+  color: white;
+  height: auto;
+  width: 100%;
+}
+
+.custom-navbar .nav-links {
   font-size: 1.2rem;
   //font-weight: 500;
-  display: block;
+  display: flex;
+  list-style: none;
   overflow: auto;
   padding: 0;
   margin: 0;
 }
 
-ul.Menulinks li {
-  padding-right: 1.5rem;
+.custom-navbar .nav-links li {
+  padding: 0 1.5rem 0 0!important;
   display: inline-block;
 }
 
-a.menu-link {
-  padding: 0;
-  margin: 0;
+.custom-navbar .nav-links a {
   color: var(--blue) !important;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-bottom .5s;
 }
 
-a.menu-link:hover {
+.custom-navbar .nav-links a:hover {
   border-bottom: 1px solid #94c7f0;
   transition: border-bottom .5s;
+}
+
+
+// Hamburger button (hidden on desktop)
+.custom-navbar .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+   .custom-navbar {
+    position: relative; /* anchor for absolute children */
+  }
+  .custom-navbar .menu-toggle {
+    display: block;
+    color: #247db8;
+  }
+
+  /* Mobile toggle menu only apperars in mobile display */
+  .custom-navbar .nav-links {
+    z-index: 9999;   /* ensures it overlays page content */
+    position: absolute;
+    top: 100%; /* place it right below navbar */
+    left: 0;
+    width: 100%;
+    background: #223868;
+    flex-direction: column;
+    align-items: flex-start;
+    //width: 200px;
+    display: none;
+    padding: .5rem;
+  }
+
+  .custom-navbar .nav-links a {
+  color: white !important;
+  padding-left: 1.2rem;
+
+}
+
+ .custom-navbar .nav-links.open {
+    display: flex;
+  }
+
+  .custom-navbar .nav-links li {
+    margin: 0.5rem 0;
+  }
+
 }
 
 
@@ -332,6 +401,13 @@ a.menu-link:hover {
 .FooterRegion {
   background-color: var(--darkest-blue);
   padding-bottom: 2rem;
+}
+// Mobile view  Logo Header region
+@media (max-width: 768px) {
+.footerlogo {
+  text-align: center;
+}
+
 }
 
 .footer-branding img{
@@ -407,6 +483,15 @@ a.footer-link:hover {
     height: 400px !important;
   width: 100% !important;
 }
+  /* Mobile view */
+@media (max-width: 576px) {
+.slick-slide img {
+    object-fit: cover;
+    height: 340px !important;
+  width: 100% !important;
+}
+}
+
 
 .slick-slide .slide-title {
   font-size: 3rem;
@@ -417,6 +502,20 @@ a.footer-link:hover {
   padding-right: 1rem;
   color: #ecf1f5;
   background-color: rgba(170, 211, 250, 0.5);
+  }
+
+  /* Mobile view */
+@media (max-width: 576px) {
+  .slick-slide .slide-title {
+  font-size: 2rem;
+  text-shadow: 2px 2px 4px rgba(7, 4, 4, 0.5);
+  position: absolute;
+  top: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #ecf1f5;
+  background-color: rgba(170, 211, 250, 0.5);
+  }
 }
 .slick-slide .slide-description {
   font-size: 1.5rem;
@@ -427,6 +526,20 @@ a.footer-link:hover {
   color: #104e81;
   background-color: rgba(232, 239, 245, 0.8);
 }
+  /* Mobile view */
+@media (max-width: 576px) {
+.slick-slide .slide-description {
+  font-size: 1rem;
+  position: absolute;
+  top: 3.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #0d2b44;
+  background-color: rgba(238, 239, 240, 0.8);
+}
+}
+
+
 .slick-slide .slide-learn {
   font-size: 1.5rem;
   position: absolute;
@@ -436,6 +549,20 @@ a.footer-link:hover {
   padding-right: .5rem;
   color: #e3ebf1;
   background-color: rgba(8, 42, 71, 0.9);
+}
+
+  /* Mobile view */
+@media (max-width: 576px) {
+.slick-slide .slide-learn {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+  margin-left: 45%;
+  padding-left: .5rem;
+  padding-right: .5rem;
+  color: #e3ebf1;
+  background-color: rgba(8, 42, 71, 0.9);
+}
 }
 
 
