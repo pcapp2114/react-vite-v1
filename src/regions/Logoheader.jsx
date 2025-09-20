@@ -5,59 +5,44 @@ import Col from 'react-bootstrap/Col';
 import { Link, NavLink } from 'react-router-dom';
 import './../index.scss'
 import logo from './../assets/images/logo-doe-dark-v2.svg';
-
-
+import HeaderSearch from '../components/HeaderSearch';
 
 const Logoheader = () => {
+  const [open, setOpen] = useState(false);
+  const [logoVisible, setLogoVisible] = useState(true);
+
   return (
 
     <Container fluid className="LogoheaderRegion">
       <div className="grid-container">
 
+        <div className="xx">
 
-        <div className="logoheader">
+          <div className="test-other">
 
+            {logoVisible && (
+              <div className="test-left">
+                <div className="logo ${!logoVisible ? 'logo-hidden' : ''}`}">
+                  <NavLink to="/">
+                    <img src={logo} className="logo-img" alt="U.S. Department of Energy" />
+                  </NavLink>
+                </div>
+              </div>
 
-          <div><NavLink to="/">
-            <img src={logo} className="logo-img" alt="U.S. Department of Energy" />
-          </NavLink>
-          </div>
+            )}
 
-
-          {/* This div is hidden on mobile (xs and sm), visible on md and larger */}
-          <div className="search-secondary-form d-none d-md-block">
-
-            <div className="search">
-              
-              <input
-                type="text"
-                placeholder="Search"
-              /><button type="submit">Submit</button>
-
-
+            <div className="test-right">
+              <HeaderSearch setLogoVisible={setLogoVisible} />
             </div>
 
-             
-            <div className="secondary-menu">
-              <nav>
-                <ul className='SecondaryMenulinks'>
-                  <li><NavLink to="/" className='secondary-menu-link'>Dashboard</NavLink></li>
-                  <li><NavLink to="/contactus" className='secondary-menu-link'>Contact</NavLink></li>
-                  <li><NavLink to="/contactus" className='secondary-menu-link'>Login</NavLink></li>
-                </ul>
 
-              </nav>
-            </div>
+
           </div>
-
 
 
         </div>
-
-
       </div>
     </Container>
   )
 }
-
 export default Logoheader;

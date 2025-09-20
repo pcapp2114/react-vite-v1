@@ -11,7 +11,9 @@ import GovernmentSite from './regions/GovernmentSite';
 import Logoheader from './regions/Logoheader';
 import Menuheader from './regions/Menuheader';
 import Footer from './regions/Footer';
-import { Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+
+import { Outlet } from 'react-router-dom';
 
 
 
@@ -25,15 +27,10 @@ function App() {
       <GovernmentSite />
       <Logoheader />
       <Menuheader />
-      <Routes>
-        <Route path="/" element={<Navigate to="/home" replace />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/aboutus" element={<Aboutus />} />
-        <Route path="/contactus" element={<Contactus />} />
-        <Route path="/mission" element={<Mission />} />
-        <Route path="/new-horizons" element={<NewHorizons />} />
 
-      </Routes>
+      {/* This is where the child route content renders from main.jsx */}
+      <Outlet />
+
       <Footer />
     </div>
 

@@ -1,0 +1,77 @@
+/* unique prefixes to avoid Bootstrap collisions */
+.container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 8px;
+  /* raise above other header elements if needed */
+  z-index: 1050; /* higher than Bootstrap’s 1030 */
+}
+
+/* plain button (no .btn / bootstrap classes) */
+.iconButton {
+  background: transparent;
+  border: 0;
+  padding: 20px 2px 2px 2px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 40px;
+  height: 40px;
+  /* prevent Bootstrap resetting fonts */
+  font-family: inherit;
+}
+
+/* container that will expand/collapse */
+.form {
+    flex-grow: 1;
+  overflow: hidden;
+max-width: none;    /* allow full expansion */
+  opacity: 0;
+  transition: max-width 280ms cubic-bezier(.2,.9,.2,1), opacity 160ms ease;
+  display: inline-block;
+  /* margin-left: 0; */
+  /* vertical-align: middle; */
+  padding: 20px 0 0 0;
+  
+}
+
+/* open state */
+.open {
+  max-width: 100%;           /* expand to desired width */
+  opacity: 1;
+  margin-left: 6px;
+}
+@media (max-width: 520px) {
+  .open {
+    max-width: 240px; /* adjust mobile width */
+  }
+}
+
+/* input styling: avoid generic selectors so Bootstrap doesn't override */
+.input {
+  width: 100%;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid rgba(0,0,0,0.12);
+  font-size: 14px;
+  box-sizing: border-box;
+  outline: none;
+  background: #fff;      /* solid background so text is visible on gradient */
+  color: #000;
+}
+
+/* focus style */
+.input:focus {
+  box-shadow: 0 0 0 3px rgba(100,150,255,0.18);
+  border-color: #4a90e2;
+}
+
+/* responsive tweak */
+@media (max-width: 520px) {
+  .open {
+    max-width: 100%;
+  }
+}

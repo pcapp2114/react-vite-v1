@@ -175,7 +175,7 @@ button:visited {}
 // Government site region
 
 .GovernmentSite-region {
-  background-color: var(--lightest-grey);
+  background-color: rgb(221, 220, 220);
 
   .usa-banner-title {
     font-size: .9rem;
@@ -242,16 +242,29 @@ h2.accordion-header {
 .LogoheaderRegion {
   background: #2b86e0;
   background: linear-gradient(0deg, rgba(43, 134, 224, 1) 0%, rgba(48, 83, 186, 1) 37%, rgba(4, 26, 64, 1) 100%);
-  height: 5rem;
+  // height: 5rem;
+  min-height: 5rem;
+  overflow: visible; /* ensure logo can show fully */
 }
 
 .LogoheaderRegion img {
   height: auto;
+  max-height: 68px;
   width: 200px;
+  padding-top:.5rem ;
 }
 
-.logoheader {
-  display: flex;
+.logo {
+display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  transition: opacity 200ms ease;
+}
+.logo-hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
 }
 
 // Mobile view  Logo Header region
@@ -300,7 +313,7 @@ a.secondary-menu-link:hover {
 
 // Menu header region
 .MenuheaderRegion {
-  // background: #e1ebf5;
+  background: #e1ebf5;
 }
 
 
@@ -310,7 +323,7 @@ a.secondary-menu-link:hover {
   // display: flex;
   justify-content: space-between;
   align-items: left;
-background: #e1ebf5;
+//background: #e1ebf5;
   padding: 0;
   color: white;
   height: auto;
@@ -330,6 +343,7 @@ background: #e1ebf5;
 .custom-navbar .nav-links li {
   padding: 0 1.5rem 0 0!important;
   display: inline-block;
+  margin: 0;
 }
 
 .custom-navbar .nav-links a {
@@ -595,4 +609,22 @@ a.footer-link:hover {
   right: 1% !important;
   z-index: 1;
 }
+
+.test-main {
+width: auto;
+
+    }
+
+
+.test-left {
+ float: left;
+}
+.test-right {
+
+}
+    .se {
+
+
+    }
+
 

@@ -13,7 +13,7 @@ const GovernmentSite = () => {
 
 
                 <Row>
-                    <Col sm={8}>
+                    <Col sm={12}>
 
 
 
@@ -41,8 +41,8 @@ const GovernmentSite = () => {
                                                 A .gov Website belongs to an official government organization in the United States.</p>
                                         </Col>
                                         <Col>
-                                            <p>Official websites use .gov
-                                                A .gov Website belongs to an official government organization in the United States.</p>
+                                            <p>Secure .gov websites use HTTPS
+A lock or https:// means you’ve safely connected to the .gov website. Share sensitive information only on official, secure websites.</p>
                                     </Col>
                                     </Row>
 
@@ -59,11 +59,7 @@ const GovernmentSite = () => {
 
 
                     </Col>
-                    <Col sm={4}>
-                    <div className="usa-banner-title d-none d-md-block">
-                            U.S. Department of Agriculture
-                        </div>
-                    </Col>
+              
                 </Row>
 
 
