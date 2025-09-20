@@ -37,14 +37,13 @@ export default function HeaderSearch({ setLogoVisible }) {
     e.preventDefault();
     const trimmed = query.trim();
     if (!trimmed) return;
-
-    // ✅ navigate to the search page relative to the Router basename
     navigate(`/search?q=${encodeURIComponent(trimmed)}`);
     setIsOpen(false);
   };
 
   return (
     <div className={styles.container} ref={containerRef}>
+      {/* Toggle button (search / close) */}
       <button
         type="button"
         aria-expanded={isOpen}
@@ -53,34 +52,47 @@ export default function HeaderSearch({ setLogoVisible }) {
         onClick={handleToggle}
       >
         <svg width="28" height="32" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path fill="currentColor" d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l4.99 5L20.49 19l-5-5zM4 9.5A5.5 5.5 0 119.5 15 5.5 5.5 0 014 9.5z"/>
+          <path
+            fill="currentColor"
+            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 
+            6.5 6.5 0 109.5 16c1.61 0 3.09-.59 
+            4.23-1.57l.27.28v.79l4.99 5L20.49 
+            19l-5-5zM4 9.5A5.5 5.5 0 119.5 15 
+            5.5 5.5 0 014 9.5z"
+          />
         </svg>
       </button>
 
-    <form
-    className={`${styles.form} ${isOpen ? styles.open : ''}`}       
-    onSubmit={handleSubmit}
-    role="search"
-    aria-hidden={!isOpen}
-  >
-    <button 
-      type="submit" 
-      className={styles.submitButton}
-      aria-label="Submit search"
-    >
-      Go
-    </button>
-    <input
-      ref={inputRef}
-      className={styles.input}
-      type="search"
-      value={query}
-      onChange={(e) => setQuery(e.target.value)}
-      placeholder="Search..."
-      aria-label="Search"
-    />
-  </form>
-      
+      {/* ✅ Only render submit button if form is open */}
+      {isOpen && (
+        <button
+          type="submit"
+          form="headerSearchForm"
+          className={styles.submitButton}
+          aria-label="Submit search"
+        >
+          Go
+        </button>
+      )}
+
+      {/* Search form */}
+      <form
+        id="headerSearchForm"
+        className={`${styles.form} ${isOpen ? styles.open : ''}`}
+        onSubmit={handleSubmit}
+        role="search"
+        aria-hidden={!isOpen}
+      >
+        <input
+          ref={inputRef}
+          className={styles.input}
+          type="search"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Search..."
+          aria-label="Search"
+        />
+      </form>
     </div>
   );
 }

@@ -18,7 +18,7 @@
   align-items: center;
   justify-content: center;
   color: white;
-  width: 40px;
+  width: 30px;
   height: 40px;
   /* prevent Bootstrap resetting fonts */
   font-family: inherit;
@@ -82,7 +82,8 @@ max-width: none;    /* allow full expansion */
     background: #0066cc;
     border: none;
     color: white;
-    padding: 5px 5px;
+    padding: 5px;
+    margin-top: 18px;
     border-radius: 4px 0 0 4px;
     cursor: pointer;
     font-size: 14px;
