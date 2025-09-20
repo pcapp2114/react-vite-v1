@@ -57,22 +57,30 @@ export default function HeaderSearch({ setLogoVisible }) {
         </svg>
       </button>
 
-      <form
-        className={`${styles.form} ${isOpen ? styles.open : ''}`}
-        onSubmit={handleSubmit}
-        role="search"
-        aria-hidden={!isOpen}
-      >
-        <input
-          ref={inputRef}
-          className={styles.input}
-          type="search"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="Search..."
-          aria-label="Search"
-        />
-      </form>
+    <form
+    className={`${styles.form} ${isOpen ? styles.open : ''}`}       
+    onSubmit={handleSubmit}
+    role="search"
+    aria-hidden={!isOpen}
+  >
+    <button 
+      type="submit" 
+      className={styles.submitButton}
+      aria-label="Submit search"
+    >
+      Go
+    </button>
+    <input
+      ref={inputRef}
+      className={styles.input}
+      type="search"
+      value={query}
+      onChange={(e) => setQuery(e.target.value)}
+      placeholder="Search..."
+      aria-label="Search"
+    />
+  </form>
+      
     </div>
   );
 }
