@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import styles from './HeaderSearch.module.css';
 import { useNavigate } from 'react-router-dom';
+import { X } from 'lucide-react';
 
 export default function HeaderSearch({ setLogoVisible }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -51,16 +52,20 @@ export default function HeaderSearch({ setLogoVisible }) {
         className={styles.iconButton}
         onClick={handleToggle}
       >
-        <svg width="28" height="32" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <path
-            fill="currentColor"
-            d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 
-            6.5 6.5 0 109.5 16c1.61 0 3.09-.59 
-            4.23-1.57l.27.28v.79l4.99 5L20.49 
-            19l-5-5zM4 9.5A5.5 5.5 0 119.5 15 
-            5.5 5.5 0 014 9.5z"
-          />
-        </svg>
+        {isOpen ? (
+          <X width="20" height="20" />
+        ) : (
+          <svg width="28" height="32" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path
+              fill="currentColor"
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5
+              6.5 6.5 0 109.5 16c1.61 0 3.09-.59
+              4.23-1.57l.27.28v.79l4.99 5L20.49
+              19l-5-5zM4 9.5A5.5 5.5 0 119.5 15
+              5.5 5.5 0 014 9.5z"
+            />
+          </svg>
+        )}
       </button>
 
       {/* ✅ Only render submit button if form is open */}
